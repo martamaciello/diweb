@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <script src="https://kit.fontawesome.com/30f2d2a0db.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+    </style>
+
+
+    <style>
+        @font-face {
+            font-family: Lato;
+            src: url("Lato/Lato-Light.ttf");
+        }
+    </style>
+
+
+    <style>
+        /*formatemaos la página*/
+        body {
+            font-family: Lato, "Open Sans", roboto;
+            font-weight: 400;
+            margin: 10px;
+            padding: 10px;
+        }
+
+
+        fieldset {
+            width: 40%;
+            float: left;
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            box-shadow: 5px 5px 10px grey;
+            background-color: #F9F9F9;
+            padding: 20px;
+            
+
+        }
+
+        form {
+            box-shadow: 5px 5px 10px;
+            width: 100%;
+            height: 300px;
+            margin: auto;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            border-radius: 5px;
+
+        }
+
+        legend {
+            font-weight: bold;
+            font-size: 15px;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        section {
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+        label {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+        }
+
+        input:not([type="radio"]):not([type="submit"]):not([type="reset"]) {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>Información personal</legend>
+
+            <section aria-label="nombre">
+
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre"><br>
+
+            </section>
+
+            <section aria-label="apellidos">
+                <label for="apellidos">Apellidos (opcional)</label>
+                <input type="text" name="apellidos" id="apellidos"><br>
+            </section>
+
+            <section aria-label="Fechanacimiento">
+                <label for="nacimiento">Fecha de Nacimiento</label>
+                <input type="date" name="fechaNac" id="fechaNac"> <br>
+            </section>
+
+            <section aria-label="genero">
+                <label for="genero">Género:</label> <br>
+                <select name="genero" id="genero">
+                    <option disabled selected>Seleccionar</option>
+                    <option value="Mujer">Mujer</option>
+                    <option value="hombre">Hombre</option>
+                    <option value="prefnodecirl">Prefiero no decirlo</option>
+                </select>
+            </section>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Opciones de</legend>
+            <section aria-label="crear direccion">
+                <i class="fa-solid fa-m"></i>
+                <label for="crear">Crear dirección gmail</label>
+                <input type="radio" name="direccion" id="crear" value="crear">
+            </section>
+
+
+
+            <section aria-label="usar correo">
+                <i class="fa-regular fa-envelope"></i>
+                <label for="usar">Usar tu correo</label>
+                <input type="radio" name="direccion" id="usar" value="usar">
+            </section>
+
+            <hr>
+            <section aria-label="usuario">
+                <label for="usario">Usuario:</label>
+                <input type="text" name="Usuario" id="usuario"><br>
+            </section>
+
+            <section aria-label="contraseña">
+                <label for="contraseña">Contraseña</label>
+                <input type="password" name="contraseña" id="contraseña"><br>
+            </section>
+
+            <section aria-label="contraseña2">
+                <label for="contraseña2">Repetir Contraseña</label>
+                <input type="password" name="contraseña2" id="contraseña2">
+            </section>
+
+
+        </fieldset>
+        <input type="submit" value="Crear cuenta">
+        <input type="reset" value="Borrar Datos">
+    </form>
+
+</body>
+
+</html>

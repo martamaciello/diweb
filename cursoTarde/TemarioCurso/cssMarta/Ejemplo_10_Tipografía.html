@@ -1,0 +1,69 @@
+<!--Ejemplo_10_Tipografía.html-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipografía</title>
+    <style>
+        p: :first-of-type {
+            /*propiedades de fuentes*/
+            font-family: Verdana, Geneva, Tahoma, sans-serif; 
+            font-size: 1.2em;
+            /* 1.2 -> 20% mayor tamaño base - 1 es el 100% que son unos 14px aprox, si ponemos +0.20 ampliamos un 20% el tamañao*/
+            font-weight: 100;
+            /*grosor*/
+            font-style: italic; /*cursiva*/
+            font-variant: small-caps; /*Tiene dos opc basicas: Versalitas (entra en el ex) es cuando estando en mayusculas, la primera aparece en mayusculas mas grande*/
+            font-stretch: 200%; /*separacin de fuente*/
+            font-stretch: condensed;
+            
+        }
+
+
+        p:nth-of-type(2){
+            text-align: center;
+            text-align: justify;
+            text-align: left;
+            text-align: right;
+
+            text-decoration: underline;
+            text-decoration: dashed;
+            text-decoration: line-through;
+            text-decoration: overline;
+
+            text-decoration-color: blue;
+            text-decoration-style: dotted;
+
+            text-transform: capitalize;/*convierte todo a mayusculas la primera letra o a minusculas*/
+            text-transform: uppercase; /*a mayusculas*/
+            text-transform: lowercase;    /*a minusculas*/
+
+
+
+            text-indent: 20px; /* sangria primera linea*/
+            letter-spacing: 10px; /*espacio entre letras*/
+            word-spacing: 10px; /*espacio entre palabras*/
+            text-shadow: 2px 2px 5px red; /* horizontal vertical y difuminado*/
+            text-align-last:center; /*alineacion de la ultima fila linea*/
+        }
+
+    </style>
+</head>
+
+<body>
+    <p>
+        El font La propiedad de tatar encubrimiento CSS establece todas las diferentes propiedades
+        de la fuente de un elemento. Alternativamente, establece la fuente de un elemento a una
+        fuente del sistema.
+    </p>
+
+    <p>
+        El font La propiedad de tatar encubrimiento CSS establece todas las diferentes propiedades
+        de la fuente de un elemento. Alternativamente, establece la fuente de un elemento a una
+        fuente del sistema.
+    </p>
+</body>
+
+</html>

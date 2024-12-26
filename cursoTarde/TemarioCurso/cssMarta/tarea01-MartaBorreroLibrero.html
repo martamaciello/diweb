@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Corte Inglés</title>
+    <script src="https://kit.fontawesome.com/30f2d2a0db.js" crossorigin="anonymous"></script>
+    <style>
+        section:first-of-type {
+            background-color: #e9e9e9;
+        }
+
+        section:first-of-type a {
+            height: ;
+            text-decoration: none;
+            text-align: center;
+            color: #242424;
+        }
+
+        nav {
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        ul>li {
+            list-style-type: none;
+            display: inline;
+            margin-right: 15px;
+        }
+
+        ul>li>a {
+            text-decoration: none;
+        }
+
+
+        ul>li>a>span {
+            text-transform: uppercase;
+            color: #242424;
+        }
+
+        ol>li {
+            list-style-type: lower-greek;
+            list-style-image: url(imagenes/cara-feliz.png);
+            list-style-position: inside;
+        }
+
+
+
+        td {
+            text-align: center;
+        }
+
+        header section a {
+            width: 100px;
+        }
+
+        header p {
+            text-align: center;
+        }
+
+
+        table {
+            width: 100%;
+            text-align: center;
+            margin: 20px 0;
+            border-collapse: collapse;
+            
+        }
+
+        table img {
+            width: 150px;
+            height: auto;
+            border-radius: 8px;
+        }
+        
+    </style>
+
+
+    <header>
+        <!-- Sección superior con el enlace de la app -->
+        <section>
+            <p><a href="https://www.elcorteingles.es/app/">Descárgate aquí nuestra App</a></p>
+        </section>
+
+
+        <!-- Sección principal con logo y enlaces -->
+        <section>
+            <a href="https://www.elcorteingles.es/electronica/"><i class="fa-solid fa-grip-lines"></i></a>
+            <img src="imagenes/logo.jpg" alt="logo" width="100px">
+
+            <div style="text-align: right;">
+                <a href="https://www.elcorteingles.es/"><i class="fa-solid fa-user" style></i></a>
+                <a
+                    href="https://cuenta.elcorteingles.es/oauth/authorize?response_type=code&scope=openid%20profile%20plans&client_id=rjx5snOWlh40SgcE0dg2guk4YnXhECYd&redirect_uri=https%3A%2F%2Fwww.elcorteingles.es%2Fecivuestore%2Fsession%2Fcallback%3Fto%3D%252Felectronica%252F&back_to=https%3A%2F%2Fwww.elcorteingles.es%252Felectronica%252F&locale=es&_gl=1*1psih2d*_gcl_au*MTQ0Nzk5ODY4My4xNzMyNTQ3MzQy*_ga*MTkyOTY0MDk0Ny4xNzMyNTQ3MzQz*_ga_XG9L1L3E0D*MTczMjYzNTc2MC4zLjEuMTczMjY0NTY5NS41Ny4wLjA."><i
+                        class="fa-regular fa-heart"></i></a>
+                <i class="fa-solid fa-bag-shopping"></i>
+            </div>
+        </section>
+
+
+        <!-- Barra de búsqueda -->
+        <section>
+            <input type="search" name="buscar" id="bucar" value="¿Qué estás buscando?" style="color: gray;">
+            <label for="buscador"></label>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </section>
+
+        <!-- Menú de navegación -->
+        <nav>
+            <ul>
+                <li><a href="https://www.elcorteingles.es/moda-mujer/"><span>moda mujer</span></a></li>
+                <li><a href="https://www.elcorteingles.es/deportes/"><span>deportes</span></a></li>
+                <li><a href="https://www.elcorteingles.es/electronica/"><span>electrónica</span></a></li>
+                <li><a href="https://www.elcorteingles.es/hogar/"><span>hogar</span></a></li>
+                <li><a
+                        href="https://www.elcorteingles.es/supermercado/?utm_source=eci&utm_medium=home&utm_campaign=botones"><span>supermercado</span></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Categorías -->
+    <section>
+        <h5>Categorias</h5>
+        <table>
+            <tr>
+                <td><a href="https://www.elcorteingles.es/moda-mujer/"> <img src="imagenes/mujermarron.avif"
+                            alt="moda_mujer" width="150px"></a></td>
+                <td><a href="https://www.elcorteingles.es/moda-hombre/"><img src="imagenes/segundaimagen.avif"
+                            alt="moda_hombre" width="150px"></a></td>
+                <td><a href="https://www.elcorteingles.es/moda-infantil/"><img src="imagenes/terceraimagen.avif"
+                            alt="infantil" width="150px"></a></td>
+                <td><a href="https://www.elcorteingles.es/hogar/"><img src="imagenes/cuartaimagen.avif" alt="hogar"
+                            width="150px"></a></td>
+                <td> <a href="https://www.elcorteingles.es/deportes/"><img src="imagenes/quintaimagen.avif"
+                            alt="deporte" width="150px"></a></td>
+                <td> <a href="https://www.elcorteingles.es/electronica/"><img src="imagenes/sexta.avif"
+                            alt="electronica" width="150px"></a></td>
+            </tr>
+            <tr>
+                <td>Moda mujer</td>
+                <td>Moda hombre</td>
+                <td>Moda infantil</td>
+                <td>Hogar</td>
+                <td>Deporte</td>
+                <td>Electrónica</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Servicios -->
+    <ul style="list-style: none;">
+        <li><i class="fa-solid fa-bag-shopping"></i> Recogida en tienda</li>
+        <li><i class="fa-solid fa-truck-fast"></i>Envío a domicilio</li>
+        <li><i class="fa-solid fa-box-open"></i>Devolución gratis en tienda</li>
+        <li><i class="fa-solid fa-car-side"></i>Click & Car</li>
+    </ul>
+</head>
+
+<body>
+</body>
+
+</html>
+
+
+
+
+<body>
+    <header>
+
+
+
+
+    </header>
+
+
+</body>

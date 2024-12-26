@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <style>
+        table{
+            border: 2px solid blue;
+            border-collapse: collapse; /* hace que todo forme parte de la misma linea*/
+            border-collapse: separate; /*deja el espaciado entre las lineas de cada celda*/
+            border-spacing: 10px; /*permite especificar la distancia de separación, no esta determinada como en la anterior.*/
+            caption-side: bottom;
+        }   
+
+        td {
+            border: 2px red dashed ;
+            text-align: center;
+            empty-cells:hide;
+        }
+
+
+
+
+
+    </style>
+
+</head>
+<body>
+    <table>
+        <caption>Titulo de tabla</caption>
+        <tr>
+            <th>cabecera1</th>
+            <th>cabecera2</th>
+            <th>cabecera3</th>
+            <th>cabecera4</th>
+        </tr>
+        <tr>
+            <td>Hola</td>
+            <td>Hola</td>
+            <td></td>
+            <td>Hola</td>
+        </tr>
+        <tr>
+            <td>Hola</td>
+            <td>Hola</td>
+            <td></td>
+            <td>Hola</td>
+        </tr>
+        <tr>
+            <td>Hola</td>
+            <td>Hola</td>
+            <td>Hola</td>
+            <td>Hola</td>
+        </tr>
+    </table>
+</body>
+</html>

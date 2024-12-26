@@ -1,0 +1,58 @@
+<!--Ejemplo_08_formulario.html-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    
+
+</head>
+
+<body>
+    <form action="grabaform.php" method="get">
+        <!--Hasta aqui es html y le sigue emmet-->
+
+        <!--el for el type y el name son atributos para evitar 
+        problemas lo que pongas en las comillas del label del for 
+        tiene que ser igual en las comillas del name y en las del id 
+        detrás del label siempre poner un salto de página <br>--> 
+        <label for="modelo">Modelo móvil</label><br>
+        <input type="text" name="modelo" id="modelo"><br>
+        <input type="submit" value="añadir al carrito">
+        
+    </form>
+
+
+    <p>
+        post: está encriptado, no se ve en la url (normalmente se usa para datos personales o credenciales) <br>
+        get:  no lo está, se ve en la url.
+
+    </p>
+
+
+
+    <p>
+        una linea = <strong>texto</strong> <br>
+        varias lineas = <strong> texto</strong> <br>
+        solo puede elegir una opcion = <strong>radio</strong> <br> 
+        varias opciones = <strong>checkbox</strong> <br>
+        varoas opciones = <strong>select</strong> <br>
+        Enviar = <strong>submit</strong> <br>
+        resetear = <strong> reset</strong> <br>
+
+
+
+        <p>label es el que no sea input (lo que rellena el cliente)
+            donde haya un input debe haber un label. <br>
+            <strong>name</strong>: es la variable del formulario
+        </p>
+
+        
+        
+
+    </p>
+</body>
+
+</html>

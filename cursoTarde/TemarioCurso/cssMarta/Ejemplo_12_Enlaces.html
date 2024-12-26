@@ -1,0 +1,42 @@
+<!-- ENLACES -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enlaces</title>
+    <style>
+        a:link {
+            color: green;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: red;
+        }
+
+        input:first-of-type:hover {
+            border: 5px solid magenta;
+        }
+
+        label[for="correo"] {
+            box-shadow: 2px 2px 5px red;
+        }
+
+        input[type="text"]:hover {
+            border: 5px solid magenta;
+        }
+
+    </style>
+</head>
+<body>
+    <p>Enlace a <a href="https://www.google.es">Google</a></p>
+    <hr>
+    <form action="#" method="get">
+        <label for="correo">Correo</label>
+        <input type="text" name="correo" id="correo"><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
