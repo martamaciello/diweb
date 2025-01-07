@@ -1,0 +1,400 @@
+/* Nombre: MARTA BORRERO LIBRERO */
+
+/* Reglas Generales */
+/* ############################################# */
+/*01. */
+body{
+    font-size: 0,7em;
+    background:rgb(241, 241, 241)
+  }
+  
+  /*02. */
+  @font-face {
+    font-family: Inter;
+    src: url(font/Inter.ttf);
+  }
+  
+  /*03. */
+  
+  header{
+    height: 80px;
+    width: 100%;
+    background-color: #FFF;
+    border-radius: 20px;
+  }
+  
+  /*04. */
+  
+  aside{
+    border: 5px solid #FFF;
+    border-radius: 20px;
+    border-top: 5px dashed #FFF;
+  }
+  
+  
+  /* Reglas Header (Cabecera)*/
+  /* ############################################# */
+  /*05. */
+  
+  header figure{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  
+  header nav:first-of-type{
+    position: absolute;
+    top: 20px;
+    left: 100px;
+  }
+  
+  /*05 (opcional). */
+  
+  header > figure img,
+  header > nav > form img{
+    width: 150px;
+    height: 50px;
+    border-radius: 10%;
+    filter: blur(0.2px);
+  }
+
+  
+  
+  /*06. */
+  
+  header nav:first-of-type form{
+  
+    margin-top: 15px;
+    width: 45%;
+    text-align: right;
+    margin-left: 200px;
+  }
+  
+  /*07. */
+  
+  header nav:first-of-type form input[type="text"],
+  header nav:first-of-type form input[type="submit"] {
+    border: 1px solid #DF5521;
+    padding: 5px 15px;
+    box-shadow: 5px 5px 10px #DF5521;
+    border-radius: 10px;
+  }
+  
+  /*08. */
+  header > nav  form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /*09. */
+  header nav:last-of-type{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+  
+  
+  /*10. */
+  
+  header nav a{
+    text-decoration: none;
+    color: rgb(100, 100, 100);
+    opacity: 90%;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 15px;
+    
+  }
+  
+  
+  /* Reglas Section Mensaje (Banner)*/
+  /* ############################################# */
+  /*11. */
+  
+  #primeranuncio{
+    padding: 5px;
+    width: 280px;
+    height: 80px;
+    background-color: linen;
+    border: 1px solid #DF5521;
+    border-radius: 1em;
+    display: block;
+    position: absolute;
+    top: 100px;
+    left: 550px;
+    z-index: 30;
+  }
+  
+  /*12. */
+  
+  
+  #primeranuncio .boton{
+    position: relative;
+    bottom: 30px;
+    right: 10px;
+    float: right;
+    display: inline;
+  }
+  
+  
+  
+  /* Reglas Aside (Laterales)*/
+  /* ############################################# */
+  /*13. */
+
+  aside{
+    position: absolute;
+    width: 18%;
+    margin-left: 30px;
+    padding: 10px;
+    z-index: 10;
+  }
+  
+  
+  /*14. */
+  
+  aside h2{
+    color: #DF5521;
+  }
+
+
+  body>aside  section{
+    position: absolute;
+    top: 100px;
+    margin-right: 10px;
+  }
+
+  /* Reglas Aside Izquierdo (Lateral Izquierdo)*/
+  /* ############################################# */
+  /*15. */
+aside{
+   position: relative;
+   top: 100px;
+   margin-right: 10px;
+}
+
+
+
+  /*16. */
+  
+  aside section{
+    display: block;
+  }
+
+  
+
+  
+
+  /*17. */
+
+  #usuario, #clave {
+    border: 1px solid #DF5521;
+    padding: 2px;
+    box-shadow: 10px 10px 10px #DF5521; 
+    width: 60%;
+    margin: 10px 0;
+    
+  }
+  
+
+  /*18. */
+
+  aside > section form #usuario:hover, #clave:hover{
+    background-color: azure;
+  }
+
+  /*19. */
+  aside > section form input[type="submit"] {
+    border: 1px solid #DF5521; 
+    border-radius: 5px;
+    display: block;
+    margin-top: 15px;
+    padding: 5px 10px;
+  }
+  
+
+  /*20. */
+  aside > section  h2 {
+    text-decoration: underline;
+    text-transform: capitalize;
+  }
+  
+
+
+  
+  /*21. */
+
+  aside > section:nth-of-type(2) {
+    
+    border: red solid 1px;
+    color: gray 0.8;
+    text-decoration: none; 
+    font-size: 14px;
+  }
+  
+  
+  /*22. */
+  aside ul {
+    list-style-type: circle; 
+    list-style-position: inside; 
+  }
+  
+
+  
+  /* Reglas Main */
+  /* ############################################# */
+  /*23. */
+
+  main {
+    position: absolute;
+    top: 100px;
+    left: 26%;
+    padding: 10px;
+    width: 45%;
+  }
+  
+  
+  /*24. */
+
+  main h1 {
+    color: #DF5521; 
+    
+  }
+  
+  
+  /*25. */
+
+  article figure img {
+    float: right;
+    margin-top: -10px;
+    margin-right: -15px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    width: 30%;
+  }
+  
+  
+  /*26. */
+  article h2 {
+    border: 1px solid #DF5521; 
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  
+  
+  /*27. */
+  article h2 a {
+    text-decoration: none;
+    color: #DF5521; 
+  }
+  
+  
+  /*28. */
+  article header h2, article header h3, article section p {
+    float: left;
+  }
+  
+  
+  /*29. */
+  article h2 {
+    width: 100%;
+  }
+  
+  
+  /* Reglas Aside Derecho*/
+  /* ############################################# */
+  /*30. */
+  aside:last-of-type {
+    position: absolute;
+    top: 100px;
+    right: 10px;
+    margin-right: 10px;
+  }
+  
+  /*31. */
+  aside h2 {
+    color: #DF5521; 
+  }
+  
+  /*32. */
+  table caption {
+    position: absolute;
+    bottom: 0;
+    color: #DF5521; 
+    font-size: 20px;
+  }
+  
+  
+  /*33. */
+  table tr {
+    color: #DF5521; 
+    font-weight: bold;
+  }
+  
+  
+  /*34. */
+  aside > table tr td a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  
+  /*35. */
+  table span {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+  
+  /* Reglas Footer*/
+  /* ############################################# */
+  /*36. */
+  footer {
+    position: relative;
+    top: 750px;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  
+  /*37. */
+  footer table {
+    margin-left: 40%;
+    border-spacing: 40px;
+  }
+  
+  
+  /*38. */
+  footer table a {
+    display: inline-block;
+    text-decoration-line: overline; 
+    color: #DF5521;
+  }
+  
+  
+  /*39. */
+table {
+    height: 850px;
+    background: linear-gradient(to bottom, white 0.2, white 0.6);
+    background-repeat:repeat;
+    background-position: bottom;
+  }
+  
+  footer figure img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /*40. */
+  footer a {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: capitalize; 
+}
+
+  
+  /* ############################################# */
+  /* FIN SECCIÓN CSS */
