@@ -87,3 +87,54 @@ where countrycode IN ("ESP","FRA","PRT")
 ORDER BY Population DESC;
 
 
+---09--
+SELECT CountryCode, MAX(Population) AS MaxPopulation
+FROM city
+WHERE CountryCode IN("FRA", "ESP", "PRT")
+GROUP BY countrycode;
+
+--10--agrupacion y filtrado (WHere para los group by)
+--where
+--usamos renombre o alias
+
+SELECT countrycode, count(name) as numCiudades
+FROM city
+GROUP BY CountryCode
+HAVING numCiudades > 100
+ORDER BY numCiudades DESC
+LIMIT 3;
+
+-- 11. JOINS! Unir 2 tablas
+SELECT * FROM city WHERE Name = "Paris";
+SELECT Name, Code, Continent, Population FROM country WHERE Code = "FRA";
+
+-- Y ahora el JOIN
+SELECT city.Name, CountryCode, District, Continent, country.Population 
+FROM city, country 
+WHERE city.CountryCode = country.Code 
+AND city.Name = "Paris";
+
+-- 12. JOINS! Unir 3 tablas
+SELECT city.Name, country.Name, Language
+FROM city, country, countrylanguage
+WHERE
+city.CountryCode = country.Code 
+AND country.Code = countrylanguage.CountryCode
+AND city.Name = "Sevilla"
+AND countrylanguage.Language = "Spanish";
+
+-- Ejercicio:
+-- Sácame Distrito, Población (de la ciudad), Continente,
+-- nombre del pais, idioma y porcentaje para ciudades llamadas Córdoba
+-- y donde se habla el español (Spanish)
+-- mysql -u root -p # root
+-- USE world;
+
+select city.District, city.Population, 
+country.Continent, country.Name , 
+countrylanguage.Language, countrylanguage.Percentage
+from city,country,countrylanguage
+where  city.name = "Córdoba"
+and countrylanguage.Language = "Spanish"
+and city.CountryCode = country.Code
+and country.code = countrylanguage.CountryCode;
